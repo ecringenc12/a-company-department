@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main() {
+	char kod[30];
+	printf("Lutfen musteri kodunuzu giriniz-> ");
+	scanf("%s",kod);
+    int uzunluk=strlen(kod);
+    
+    if(kod[0]=='I' && kod[1]=='T')
+    {
+    	printf("Bilgi teknolojileri departmani\n");
+	}
+	else if(kod[0]=='H' && kod[1]=='R')
+	{
+		printf("Insan kaynaklari departmani\n");
+	}
+	else
+	{
+		printf("Diger departman\n");
+	}
+	
+	printf("Uzunluk-> %d",uzunluk);
+	return 0;
+}
